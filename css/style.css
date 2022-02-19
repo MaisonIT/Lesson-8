@@ -1,0 +1,361 @@
+/* Обнуляющий стиль */
+@import url(null.css);
+
+/* &display=swap Для подключения шрифта */
+
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital@0;1&family=Lobster&family=Russo+One&display=swap");
+/*|||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+body {
+	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 0.5466561624649859) 100%);
+}
+.wrapper {
+	padding: 20px;
+	min-height: 100%;
+	overflow: hidden;
+}
+.main {
+	font-family: "Alumni Sans", sans-serif;
+}
+.main-title {
+	box-shadow: 2px 2px 20px 10px rgba(0, 11, 168, 0.637);
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border-radius: 10px 10px 10px 10px;
+	background: linear-gradient(90deg, rgba(14, 0, 249, 1) 0%, rgba(0, 194, 198, 1) 49%, rgba(255, 255, 255, 1) 100%);
+	padding: 10px;
+	font-family: "Russo One", sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	border: 5px solid blue;
+}
+.button {
+	box-shadow: 0 5px 0 0 black;
+	font-family: "Russo One", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	border: 3px dashed blueviolet;
+	background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px 10px;
+	display: inline-block;
+	margin: 0 0 30px 650px;
+	width: 200px;
+	height: 32px;
+	text-align: center;
+}
+
+.button:hover {
+	color: blue;
+	margin: 2px 0 28px 650px;
+	box-shadow: 0 1px 0 0 black;
+}
+a.button {
+	color: blanchedalmond;
+}
+.block-hidden {
+	margin: 0 0 30px 0;
+	display: none;
+}
+.block-hidden div:last-child {
+	margin: 0;
+}
+.block-hidden:target {
+	display: block;
+}
+img {
+	border: 10px solid rgba(3, 0, 175, 0.438);
+	border-radius: 50%;
+	height: 600px;
+	width: 600px;
+	overflow: hidden;
+}
+.block-astro-image,
+.block-pluto-image,
+.block-electro-image,
+.block-tesla-image,
+.block-mars-image,
+.block-truck-image,
+.block-cats-image,
+.block-apple-image {
+	margin: 0 0 30px 450px;
+}
+.button-close {
+	box-shadow: 0 5px 0 0 black;
+	font-family: "Russo One", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	border: 3px dotted rgb(35, 0, 190);
+	background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px 10px;
+	display: inline-block;
+	margin: 0 0 30px 650px;
+	width: 200px;
+	height: 32px;
+	text-align: center;
+}
+a.button-close {
+	color: rgb(62, 0, 121);
+}
+.button-close:hover {
+	color: red;
+	margin: 2px 0 28px 650px;
+	box-shadow: 0 1px 0 0 black;
+}
+.block-main-image {
+	margin: 0 0 30px 450px;
+}
+.title-list {
+	text-shadow: 5px 5px 5px white;
+	color: chocolate;
+	font-family: "Lobster", cursive;
+	font-size: 40px;
+	margin: 0 0 20px 200px;
+}
+.main-list {
+	counter-reset: item;
+	margin: 0 0 20px 0;
+}
+ul li {
+	padding: 0 0 0 40px;
+	color: crimson;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin: 0 0 20px 0;
+	background: url("../img/icon.png") 0 0 / 25px no-repeat;
+}
+ul li:nth-child(odd) {
+	text-decoration: underline;
+}
+ul li:nth-child(even) {
+	color: rgb(170, 94, 0);
+}
+ul li:last-child {
+	margin-bottom: 0;
+}
+.main-list li::before {
+	color: black;
+	font-family: "Lobster", cursive;
+	counter-increment: item;
+	content: counter(item) ".";
+}
+.block-astro,
+.block-pluto,
+.block-electro,
+.block-tesla,
+.block-mars,
+.block-truck,
+.block-cats,
+.block-apple {
+	margin: 0 0 30px 0;
+}
+.text-astro,
+.text-pluto,
+.text-electro,
+.text-tesla,
+.text-mars,
+.text-truck,
+.text-cats,
+.text-apple {
+	border-radius: 10px;
+	border: 1px solid white;
+	padding: 25px 10px;
+	min-height: 100px;
+}
+
+.block-astro::after {
+	display: inline-block;
+	content: "";
+	width: 100%;
+	height: 3px;
+	background: black;
+}
+.text-astro {
+	background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(172, 0, 205, 0.4318102240896359) 98%);
+	box-shadow: 1px 2px 10px 2px white;
+	letter-spacing: 5px;
+	font-size: 20px;
+	color: rgb(196, 0, 0);
+}
+.text-astro::first-letter {
+	font-size: 50px;
+	color: white;
+}
+.block-pluto::after {
+	display: inline-block;
+	content: "";
+	width: 100%;
+	height: 3px;
+	background: rgb(0, 168, 168);
+}
+.text-pluto {
+	background: linear-gradient(90deg, rgba(249, 217, 0, 1) 0%, rgba(198, 0, 0, 1) 50%, rgba(87, 0, 0, 1) 100%);
+	box-shadow: 1px 2px 10px 2px rgba(250, 0, 0, 0.705);
+	letter-spacing: 2px;
+	font-size: 28px;
+	color: rgb(0, 0, 0);
+}
+.text-pluto::first-line {
+	font-size: 40px;
+	color: rgb(35, 0, 163);
+}
+.block-electro::after {
+	display: inline-block;
+	content: "";
+	width: 100%;
+	height: 5px;
+	background: rgba(88, 88, 88, 0.938);
+}
+.text-electro {
+	background: linear-gradient(90deg, rgba(22, 249, 0, 1) 0%, rgba(19, 0, 198, 1) 50%, rgba(0, 232, 255, 1) 100%);
+	box-shadow: 1px 2px 10px 2px rgba(0, 250, 33, 0.705);
+	letter-spacing: 5px;
+	font-size: 24px;
+	color: #fff;
+}
+.text-electro:hover {
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.5214460784313726) 0%,
+		rgba(19, 0, 198, 1) 50%,
+		rgba(252, 252, 252, 1) 100%
+	);
+}
+.block-tesla::after {
+	display: inline-block;
+	content: "";
+	width: 100%;
+	height: 4px;
+	background: rgba(8, 250, 0, 0.938);
+}
+.text-tesla {
+	background: linear-gradient(
+		90deg,
+		rgba(89, 89, 89, 0.5214460784313726) 0%,
+		rgba(0, 0, 0, 1) 50%,
+		rgba(252, 252, 252, 1) 100%
+	);
+	box-shadow: 1px 2px 10px 2px rgba(0, 4, 250, 0.705);
+	letter-spacing: 10px;
+	font-size: 30px;
+	color: #fff;
+}
+
+.block-mars::after {
+	display: inline-block;
+	content: "";
+	width: 100%;
+	height: 10px;
+	background: rgb(250, 162, 0);
+}
+.text-mars {
+	margin: 0 0 20px 0;
+	background: linear-gradient(0deg, rgba(195, 34, 34, 1) 0%, rgba(253, 187, 45, 1) 100%);
+	box-shadow: 1px 2px 10px 2px rgba(0, 4, 250, 0.705);
+	letter-spacing: 12px;
+	font-size: 35px;
+	color: #000;
+}
+.text-mars:hover {
+	background: url("../img/marsBack.jpg") 0 0 / cover no-repeat;
+	color: oldlace;
+}
+.block-truck::after {
+	display: inline-block;
+	content: "";
+	width: 100%;
+	height: 10px;
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(0, 0, 0, 0.4318102240896359) 52%,
+		rgba(255, 255, 255, 0.4318102240896359) 98%
+	);
+}
+.text-truck {
+	margin: 0 0 20px 0;
+	background: radial-gradient(
+		circle,
+		rgba(88, 63, 251, 1) 0%,
+		rgba(0, 0, 0, 0.4318102240896359) 52%,
+		rgba(255, 255, 255, 0.4318102240896359) 98%
+	);
+	box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.705);
+	letter-spacing: 15px;
+	font-size: 22px;
+	color: #000;
+}
+.text-truck:hover {
+	font-size: 50px;
+	max-height: 500px;
+	background: grey url("../img/wheel.png") 0 0 / 60px repeat;
+	color: red;
+	font-weight: bold;
+	overflow: auto;
+}
+.block-cats::after {
+	display: inline-block;
+	content: "";
+	width: 100%;
+	height: 10px;
+	background: radial-gradient(
+		circle,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(250, 0, 169, 1) 49%,
+		rgba(148, 187, 233, 0.5466561624649859) 100%
+	);
+}
+.text-cats {
+	margin: 0 0 20px 0;
+	background: radial-gradient(
+		circle,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(250, 0, 169, 1) 49%,
+		rgba(148, 187, 233, 0.5466561624649859) 100%
+	);
+	box-shadow: 1px 2px 10px 2px rgba(255, 255, 255, 0.705);
+	letter-spacing: 10px;
+	font-size: 30px;
+	color: rgb(27, 26, 26);
+}
+.text-cats:hover {
+	font-size: 50px;
+	background: radial-gradient(
+			circle,
+			rgba(236, 0, 187, 1) 0%,
+			rgba(143, 0, 0, 0.4318102240896359) 52%,
+			rgba(255, 255, 255, 0.4318102240896359) 98%
+		),
+		url("../img/catsback.png") center / 200px no-repeat;
+}
+.block-apple::after {
+	display: inline-block;
+	content: "";
+	width: 100%;
+	height: 10px;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 0, 0, 0.5214460784313726) 0%,
+		rgba(0, 0, 0, 1) 50%,
+		rgba(25, 0, 255, 0.8379726890756303) 100%
+	);
+}
+.text-apple {
+	margin: 0 0 20px 0;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 0, 0, 0.5214460784313726) 0%,
+		rgba(0, 0, 0, 1) 50%,
+		rgba(25, 0, 255, 0.8379726890756303) 100%
+	);
+	box-shadow: 1px 2px 10px 2px rgba(158, 0, 0, 0.705);
+	letter-spacing: 13px;
+	font-size: 42px;
+	color: rgb(228, 186, 0);
+}
