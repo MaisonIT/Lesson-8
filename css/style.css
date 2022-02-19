@@ -19,7 +19,7 @@ body {
 }
 .main-title {
 	box-shadow: 2px 2px 20px 10px rgba(0, 11, 168, 0.637);
-	width: 500px;
+	max-width: 500px;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	border-radius: 10px 10px 10px 10px;
